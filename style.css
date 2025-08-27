@@ -49,37 +49,28 @@ body{
 
 .progress_bar{
     margin-top: 30px;
-    
+    margin-bottom: 30px;
     height: 30px;
-    
-    
-   
     border-radius: 15px;
     background-color: #48A3001A;
-
-    
-
 }
 .progress_status{
-    margin-top: 30px;
     width: 33%;
     height: 100%;
-    /* angle: 0 deg; */
-    opacity: 1;
-    top: 330px;
-    left: 432px;
     border-radius: 15px;
     background-color: #48A300;
     display: flex;
     align-items: center;
     font-size: 10px;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .warning{
-    margin-top: 30px;
+    
     font-size: 14px;
     color: #FF5151;
+    display: none;
 }
 
 .goal-container{
@@ -113,7 +104,7 @@ body{
     border: none;
     outline: none;
     font-family: inherit;
-    /* background-color: pink; */
+    font-weight: 500;
     padding-left: 15px;
     align-self: stretch;
    
@@ -127,7 +118,7 @@ body{
     display: none;
 }
 .completed .custom-checkbox{
-    background-color:#48A300 ;
+    color:#48A300 ;
     border-color: #48A300;
     
 }
