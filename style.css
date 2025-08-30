@@ -10,7 +10,7 @@ body{
     font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
-    justify-content: center 
+    justify-content: center ;
 }
 .heading{
     font-size: 64px;
@@ -25,12 +25,9 @@ body{
 
 .container{
     padding: 32px 48px;
-    width: 660px;
-    height: 810px;
-    /* angle: 0 deg; */
+
+
     opacity: 1;
-    top: 179px;
-    left: 390px;
     border-radius: 15px;
     box-shadow: 0 0 6px 5px rgba(0, 0, 0 ,0.1) ;
 
@@ -55,7 +52,7 @@ body{
     background-color: #48A3001A;
 }
 .progress_status{
-    width: 33%;
+    width: 0%;
     height: 100%;
     border-radius: 15px;
     background-color: #48A300;
@@ -64,6 +61,29 @@ body{
     font-size: 10px;
     font-weight: 500;
     margin-bottom: 5px;
+    
+    /* opacity: 0; */
+    /* display: none; */
+    /* visibility: hidden; */
+    /* overflow: hidden; */
+}
+
+.progress_status span{
+    padding-left: 40px;
+    display: none;
+}
+.one-done .progress_status{
+    width: 33%;
+    
+
+}
+
+.two-done .progress_status{
+    width: 67%;
+}
+
+.three-done .progress_status{
+    width: 100%;
 }
 
 .warning{
@@ -71,6 +91,10 @@ body{
     font-size: 14px;
     color: #FF5151;
     display: none;
+}
+
+.show-error .warning{
+    display: block;
 }
 
 .goal-container{
@@ -132,6 +156,8 @@ body{
      text-decoration: line-through;
 
 }
+
+
 
 
 .bottom-text{

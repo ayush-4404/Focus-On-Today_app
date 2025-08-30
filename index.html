@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus On Today</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+
     <main>
         <h1 class="heading">Focus On <span class>Today</span> </h1>
         <div class="container">
-            <h2 class="Today">Today <img class="sun"  src="/Images/Sun.svg" alt="sun"></h2>
+            <h2 class="Today">Today <img class="sun" src="/Images/Sun.svg" alt="sun"></h2>
             <p style="font-size: 14px; color: #858585;">Raise the bar by completing your goals!</p>
             <div class="progress_bar">
-                <div class="progress_status"></div>
+                <div class="progress_status"> <span> 2/3 completed </span> </div>
                 <div class="warning">Please set all the goals</div>
 
             </div>
             <div class="goal-container">
                 <div class="custom-checkbox">
-                    <img class="check-icon" src="/Images/Group 1.svg" alt="checked">   
+                    <img class="check-icon" src="/Images/Group 1.svg" alt="checked">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add a new Goal">
+                <input class="goal-input" id="input1" type="text" placeholder="Add a new Goal">
             </div>
             <div class="goal-container">
                 <div class="custom-checkbox">
-                    <img class="check-icon" src="/Images/Group 1.svg" alt="checked">   
-   
+                    <img class="check-icon" src="/Images/Group 1.svg" alt="checked">
+
                 </div>
-                <input class="goal-input" type="text" placeholder="Add a new Goal">
+                <input class="goal-input" id="input2" type="text" placeholder="Add a new Goal">
             </div>
             <div class="goal-container">
                 <div class="custom-checkbox">
-                    <img class="check-icon" src="/Images/Group 1.svg" alt="checked">      
+                    <img class="check-icon" src="/Images/Group 1.svg" alt="checked">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add a new Goal">
+                <input class="goal-input" id="input3" type="text" placeholder="Add a new Goal">
             </div>
 
             <div class="bottom-text">“Move one step ahead, today!”</div>
         </div>
-        
+
     </main>
-    
+
 </body>
+
 </html>
