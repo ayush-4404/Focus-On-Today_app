@@ -20,6 +20,14 @@ let count = Object.values(allGoals).filter((goal) => goal.completed).length;
     if (count == 1) progressBar.classList.add('one-done')
     if (count == 2) progressBar.classList.add('two-done')
     if (count == 3) progressBar.classList.add('three-done')
+
+    if (count != 0) {
+        progressStatus.firstElementChild.style.display = "block";
+        progressStatus.firstElementChild.innerText = `${count}/3 tasks done`;
+    } else {
+        progressStatus.firstElementChild.style.display = "none";
+    }
+
 }
 checkBoxList.forEach((checkbox) => {
 
@@ -33,7 +41,7 @@ checkBoxList.forEach((checkbox) => {
         if (allFilled) {
             const inputId = checkbox.nextElementSibling.id
             allGoals[inputId].completed = !allGoals[inputId].completed;
-            
+
 
             localStorage.setItem('allGoals', JSON.stringify(allGoals))
             count = Object.values(allGoals).filter((goal) => goal.completed).length;
@@ -42,11 +50,17 @@ checkBoxList.forEach((checkbox) => {
                 if (count == 1) progressBar.classList.add('one-done')
                 if (count == 2) progressBar.classList.add('two-done')
                 if (count == 3) progressBar.classList.add('three-done')
+                if (count != 0) {
+                    progressStatus.firstElementChild.style.display = "block";
+                    progressStatus.firstElementChild.innerText = `${count}/3 tasks done`;
+                } else {
+                    progressStatus.firstElementChild.style.display = "none";
+                }
             }
 
             progressBar.classList.remove('show-error')
             checkbox.parentElement.classList.toggle('completed');
-            
+
         }
         else {
             errormssg.parentElement.classList.add('show-error')
@@ -80,6 +94,12 @@ inputFields.forEach((input) => {
             if (count == 1) progressBar.classList.add('one-done')
             if (count == 2) progressBar.classList.add('two-done')
             if (count == 3) progressBar.classList.add('three-done')
+            if (count != 0) {
+                progressStatus.firstElementChild.style.display = "block";
+                progressStatus.firstElementChild.innerText = `${count}/3 tasks done`;
+            } else {
+                progressStatus.firstElementChild.style.display = "none";
+            }
         }
 
         localStorage.setItem('allGoals', JSON.stringify(allGoals))
