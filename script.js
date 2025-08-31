@@ -74,7 +74,9 @@ inputFields.forEach((input) => {
 
     // input.value = allGoals[input.id].name;
     input.value = allGoals[input.id]?.name || "";
-    if (allGoals[input.id].completed) input.parentElement.classList.add('completed')
+    if (allGoals[input.id]?.completed) {
+        input.parentElement.classList.add('completed');
+    }
 
     input.addEventListener('focus', () => {
         progressBar.classList.remove('show-error')
